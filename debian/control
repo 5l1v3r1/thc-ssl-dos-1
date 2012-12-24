@@ -1,6 +1,6 @@
 Source: thc-ssl-dos
-Section: unknown
-Priority: net
+Section: net
+Priority: extra
 Maintainer: Devon Kearns <dookie@kali.org>
 Build-Depends: debhelper (>= 8.0.0), autotools-dev, libpcap-dev, libssl-dev
 Standards-Version: 3.9.3
