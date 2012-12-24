@@ -1,15 +1,27 @@
 Source: thc-ssl-dos
 Section: unknown
-Priority: extra
+Priority: net
 Maintainer: Devon Kearns <dookie@kali.org>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libpcap-dev, libssl-dev
 Standards-Version: 3.9.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/thc-ssl-dos.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/thc-ssl-dos.git;a=summary
+Homepage: http://www.thc.org/thc-ssl-dos/
+Vcs-Git: ssh://git@git.kali.org/packages/thc-ssl-dos.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/thc-ssl-dos.git;a=summary
 
 Package: thc-ssl-dos
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${shlibs:Depends}, ${misc:Depends}, libpcap0.8, openssl
+Description: Stress tester for the SSL handshake
+ THC-SSL-DOS is a tool to verify the performance of SSL.
+ .
+ Establishing a secure SSL connection requires 15x more processing
+ power on the server than on the client.
+ .
+ THC-SSL-DOS exploits this asymmetric property by overloading the
+ server and knocking it off the Internet.
+ .
+ This problem affects all SSL implementations today. The vendors are aware
+ of this problem since 2003 and the topic has been widely discussed.
+ .
+ This attack further exploits the SSL secure Renegotiation feature
+ to trigger thousands of renegotiations via single TCP connection.

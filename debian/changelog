@@ -1,5 +1,5 @@
-thc-ssl-dos (1.4-1) unstable; urgency=low
+thc-ssl-dos (1.4-1kali0) kali; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release 
 
  -- Devon Kearns <dookie@kali.org>  Mon, 24 Dec 2012 10:54:53 -0700
