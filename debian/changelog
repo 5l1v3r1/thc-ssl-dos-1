@@ -1,3 +1,9 @@
+thc-ssl-dos (1.4-1kali2) kali; urgency=low
+
+  * Updated watch file
+
+ -- Mati Aharoni <muts@kali.org>  Sun, 12 Jan 2014 15:44:31 -0500
+
 thc-ssl-dos (1.4-1kali1) kali; urgency=low
 
   * Fixed error in the control file
